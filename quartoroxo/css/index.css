@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+}
+
+#video-container, .anuncio-container{
+    animation: fadeInAnimation ease 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+#video-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#videobg{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    filter: blur(3px);
+}
+
+.anuncio-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+}
+
+.anuncio-container .anuncio-titulo{
+    font-family: 'Bebas Neue';
+    text-align: center;
+    color: #C1BAA1;
+    font-size: 200pt;
+}
+
+.anuncio-container .anuncio-descricao{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #C1BAA1;
+    font-size:30pt;
+}
+
+.anuncio-icones{
+    text-align: center;
+}
+
+.anuncio-icones a img{
+    width: 75px;
+    margin: 30px 40px;
+}
+
+@media (max-width: 1820px){
+    #videobg{
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media (max-width: 800px){
+    .anuncio-container{
+        width: 500px;
+    }
+
+    .anuncio-container .anuncio-titulo{
+        font-family: 'Bebas Neue';
+        text-align: center;
+        color: #C1BAA1;
+        font-size: 60pt;
+    }
+    
+    .anuncio-container .anuncio-descricao{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: #C1BAA1;
+        font-size: 20pt;
+    }
+
+    .anuncio-icones{
+        text-align: center;
+    }
+    
+    .anuncio-icones a img{
+        width: 35px;
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .anuncio-container{
+        width: 200px;
+    }
+
+    .anuncio-container .anuncio-titulo{
+        font-size: 50pt;
+    }
+    
+    .anuncio-container .anuncio-descricao{
+        font-size: 10pt;
+    }
+}

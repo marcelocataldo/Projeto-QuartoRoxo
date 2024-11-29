@@ -1,0 +1,122 @@
+.nav-container{
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.nav-container .btn-arquivo{
+    position: fixed;
+    left: 30px;
+    top: 10px;
+}
+
+.nav-container .btn-arquivo a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Outfit';
+    font-size: 30pt;
+}
+
+.nav-container .btn-logo{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.nav-container .btn-logo a img{
+    margin-top: 15px;
+    width: 350px;
+}
+
+.nav-container .btn-mais{
+    position: fixed;
+    right: 30px;
+    top: 10px;
+}
+
+.nav-container .btn-mais a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Outfit';
+    font-size: 30pt;
+}
+
+@media (max-width: 800px){
+    .nav-container .btn-arquivo{
+        position: fixed;
+        left: 30px;
+        top: 30px;
+    }
+    
+    .nav-container .btn-arquivo a{
+        font-size: 15pt;
+    }
+    
+    .nav-container .btn-logo{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    
+    .nav-container .btn-logo a img{
+        margin-top: 15px;
+        width: 170px;
+    }
+    
+    .nav-container .btn-mais{
+        position: fixed;
+        right: 30px;
+        top: 30px;
+    }
+    
+    .nav-container .btn-mais a{
+        font-size: 15pt;
+    }
+}
+
+@media (max-width: 500px){
+    .nav-container .btn-arquivo{
+        position: fixed;
+        left: 15px;
+        top: 27px;
+    }
+
+    .nav-container .btn-arquivo a{
+        font-size: 10pt;
+    }
+
+    .nav-container .btn-logo{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    
+    .nav-container .btn-logo a img{
+        margin-top: 15px;
+        width: 120px;
+    }
+
+    .nav-container .btn-mais{
+        position: fixed;
+        right: 15px;
+        top: 27px;
+    }
+    
+    .nav-container .btn-mais a{
+        font-size: 10pt;
+    }
+}
