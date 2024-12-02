@@ -1,0 +1,74 @@
+.container-trabalhos{
+    margin: 200px 25px 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 0.5;
+
+    animation: fadeInAnimation ease 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.trabalho{
+    margin: 10px;
+}
+
+.trabalho-thumb img{
+    width: 360px;
+}
+
+.trabalho-titulo{
+    width: 360px;
+    font-size: 15pt;
+    font-weight: 100;
+    text-transform: lowercase;
+    font-family: 'Outfit';
+    color: white;
+}
+
+@media (max-width: 800px){
+    .container-trabalhos{
+        margin: 100px 25px 0px 25px;
+    }
+
+    .trabalho{
+        width: 120px;
+    }
+    
+    .trabalho-thumb img{
+        width: 120px;
+    }
+
+    .trabalho-titulo{
+        width: 120px;
+        font-size: 10pt;
+        color: white;
+    }
+}
+
+@media (max-width: 350px){
+    .container-trabalhos{
+        margin: 80px 25px 0px 25px;
+    }
+
+    .trabalho{
+        width: 180px;
+    }
+    
+    .trabalho-thumb img{
+        width: 180px;
+    }
+}
