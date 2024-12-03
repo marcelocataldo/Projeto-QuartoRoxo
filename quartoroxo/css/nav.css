@@ -2,6 +2,12 @@
     animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    height: 100px;
+    background-image: linear-gradient(#010101, rgba(255, 255, 0, 0));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 @keyframes fadeInAnimation {
@@ -19,11 +25,12 @@
     position: fixed;
     left: 30px;
     top: 10px;
+    z-index: 1;
 }
 
 .nav-container .btn-arquivo a{
     text-decoration: none;
-    color: white;
+    color: #cfbeb3;
     font-family: 'Outfit';
     font-size: 30pt;
 }
@@ -33,6 +40,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
+    z-index: 1;
 
 }
 
@@ -45,11 +53,12 @@
     position: fixed;
     right: 30px;
     top: 10px;
+    z-index: 1;
 }
 
 .nav-container .btn-mais a{
     text-decoration: none;
-    color: white;
+    color: #cfbeb3;
     font-family: 'Outfit';
     font-size: 30pt;
 }
